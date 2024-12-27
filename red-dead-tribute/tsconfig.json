@@ -23,5 +23,5 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src", "postcss.config.js"]
+  "include": ["src", "postcss.config.ts"]
 }
