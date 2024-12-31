@@ -7,7 +7,7 @@ const Home: React.FC = () => {
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-60 scale-110"
         style={{
-          backgroundImage: 'url("/images/rdr2-landscape.jpg")',
+          backgroundImage: 'url("/images/misc/rdr2-landscape.jpg")',
           backgroundAttachment: "fixed",
         }}
         animate={{
@@ -64,7 +64,7 @@ const Home: React.FC = () => {
 
       <div className="relative z-10 bg-zinc-900/95 py-20 text-center">
         <img
-          src="/images/rating.png"
+          src="/images/misc/rating.png"
           alt="Red Dead Redemption 2 Rating"
           className="mx-auto max-w-sm rounded shadow-lg"
         />

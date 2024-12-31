@@ -1,8 +1,3 @@
-import Ambarino from "../../assets/images/locations/ambarino.png";
-import Lemoyne from "../../assets/images/locations/lemoyne.png";
-import NewAustin from "../../assets/images/locations/new_austin.png";
-import NewHanover from "../../assets/images/locations/new_hanover.png";
-import WestElizabeth from "../../assets/images/locations/west_elizabeth.png";
 import { motion } from "framer-motion";
 
 interface Location {
@@ -21,7 +16,7 @@ const locationsData: Record<string, Location> = {
   Ambarino: {
     description:
       "A rugged, mountainous territory dominated by the towering peaks of the Grizzlies. The harsh climate and treacherous terrain make it one of the least populated regions.",
-    imagePath: Ambarino,
+    imagePath: "/images/locations/ambarino.png",
     climate: "Alpine climate with heavy snowfall and harsh winters",
     keyFeatures: [
       "Mount Hagen",
@@ -50,7 +45,7 @@ const locationsData: Record<string, Location> = {
   Lemoyne: {
     description:
       "A southern state that captures the essence of the Deep South, with its plantation houses, swamps, and bustling city life.",
-    imagePath: Lemoyne,
+    imagePath: "/images/locations/lemoyne.png",
     climate: "Humid subtropical climate with warm temperatures year-round",
     keyFeatures: [
       "Braithwaite Manor",
@@ -78,7 +73,7 @@ const locationsData: Record<string, Location> = {
   "New Austin": {
     description:
       "The westernmost state in the territory, characterized by its arid desert landscape and frontier settlements.",
-    imagePath: NewAustin,
+    imagePath: "/images/locations/new_austin.png",
     climate: "Hot desert climate with minimal rainfall",
     keyFeatures: [
       "Fort Mercer",
@@ -106,7 +101,7 @@ const locationsData: Record<string, Location> = {
   "New Hanover": {
     description:
       "A diverse territory ranging from open plains to dense forests, representing the heart of the frontier.",
-    imagePath: NewHanover,
+    imagePath: "/images/locations/new_hanover.png",
     climate: "Variable continental climate with distinct seasons",
     keyFeatures: [
       "Heartland Oil Fields",
@@ -135,7 +130,7 @@ const locationsData: Record<string, Location> = {
   "West Elizabeth": {
     description:
       "A diverse state featuring everything from bustling settlements to pristine wilderness.",
-    imagePath: WestElizabeth,
+    imagePath: "/images/locations/west_elizabeth.png",
     climate: "Mixed climate with snowy mountains and temperate forests",
     keyFeatures: [
       "Tall Trees",

@@ -1,8 +1,4 @@
 import { motion } from "framer-motion";
-import Header from "../../assets/images/gallery/overview_header.png";
-import DyingEra from "../../assets/images/gallery/dying_era.png";
-import LivingWorld from "../../assets/images/gallery/living_world.png";
-import YourStory from "../../assets/images/gallery/your_story.png";
 
 interface StorySection {
   title: string;
@@ -15,19 +11,19 @@ const storySections: StorySection[] = [
     title: "A Dying Era",
     content:
       "Set in 1899, at a pivotal moment in American history. Witness the clash between the old ways of the frontier and the unstoppable march of modernization as railroads, telegraphs, and industrialization transform the West forever.",
-    imagePath: DyingEra,
+    imagePath: "/images/gallery/dying_era.png",
   },
   {
     title: "Living, Breathing World",
     content:
       "Explore vast territories from snowy mountains to swamplands, each filled with unique wildlife, settlements, and secrets. Dynamic weather and day-night cycles create an immersive environment that reacts to your presence.",
-    imagePath: LivingWorld,
+    imagePath: "/images/gallery/living_world.png",
   },
   {
     title: "Your Story, Your Choices",
     content:
       "Every decision shapes your journey through this harsh land. Build relationships, make allies or enemies, and face the consequences of your actions. Your choices influence not just the story, but the very world around you.",
-    imagePath: YourStory,
+    imagePath: "/images/gallery/your_story.png",
   },
 ];
 
@@ -37,7 +33,7 @@ const Overview = () => {
       <div className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src={Header}
+            src="/images/gallery/overview_header.png"
             alt="RDR2 Header"
             className="w-full h-full object-cover"
           />
@@ -94,6 +90,52 @@ const Overview = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="mt-24 bg-zinc-800/50 rounded-lg p-8 border border-stone-700/50"
+        >
+          <h2 className="text-3xl font-serif text-amber-700 mb-6">
+            Key Features
+          </h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <div>
+              <h3 className="text-xl text-amber-500 mb-3">Authentic World</h3>
+              <p className="text-stone-300">
+                From bustling cities to remote wilderness, experience a
+                meticulously crafted recreation of the American frontier.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl text-amber-500 mb-3">
+                Dynamic Interactions
+              </h3>
+              <p className="text-stone-300">
+                Every NPC has a purpose and routine. Your actions influence how
+                the world responds to you, from friendly greetings to fearful
+                avoidance.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl text-amber-500 mb-3">Advanced Systems</h3>
+              <p className="text-stone-300">
+                Detailed hunting, crafting, and survival mechanics bring the
+                frontier experience to life with unprecedented depth.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl text-amber-500 mb-3">
+                Evolving Experience
+              </h3>
+              <p className="text-stone-300">
+                Your choices and actions affect your character's appearance,
+                abilities, and reputation throughout the world.
+              </p>
+            </div>
+          </div>
+        </motion.div> */}
       </div>
     </div>
   );
