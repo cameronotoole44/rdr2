@@ -46,29 +46,20 @@ const LegendaryCard = ({ creature, index }: LegendaryCardProps) => {
             <span className="text-stone-200">{creature.location}</span>
           </div>
 
-          <div className="flex items-center justify-between">
-            <span className="text-stone-400">Requirements:</span>
-            <span className="text-stone-200">{creature.requirements}</span>
-          </div>
-
-          {creature.chapter && (
+          {creature.nickname && (
             <div className="flex items-center justify-between">
-              <span className="text-stone-400">Available:</span>
-              <span className="text-stone-200">{creature.chapter}</span>
+              <span className="text-stone-400">Nickname:</span>
+              <span className="text-stone-200">{creature.nickname}</span>
             </div>
           )}
 
           <div className="flex items-center justify-between">
             <span className="text-stone-400">Method:</span>
-            <span className="text-stone-200">{creature.method}</span>
+            <span className="text-stone-200">
+              Legendary animals always give a clean pelt or skin, so any weapon
+              can be used
+            </span>
           </div>
-
-          {creature.reward && (
-            <div className="flex items-center justify-between">
-              <span className="text-stone-400">Reward:</span>
-              <span className="text-stone-200">{creature.reward}</span>
-            </div>
-          )}
         </div>
 
         <p className="mt-4 text-stone-400 text-sm leading-relaxed">
