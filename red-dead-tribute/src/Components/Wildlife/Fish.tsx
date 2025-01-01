@@ -76,10 +76,6 @@ const Fish = () => {
     <div className="relative min-h-screen bg-zinc-900 text-stone-200 overflow-hidden">
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center opacity-40 scale-110"
-        style={{
-          backgroundImage: 'url("/images/misc/fishing_background.png")',
-          backgroundAttachment: "fixed",
-        }}
         animate={{
           scale: [1.1, 1.15, 1.1],
           transition: {
