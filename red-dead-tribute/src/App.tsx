@@ -9,6 +9,7 @@ import WildlifeGrid from "./Components/Wildlife/Wildlife";
 import FishGrid from "./Components/Wildlife/Fish";
 import LegendaryGrid from "./Components/Wildlife/Legendary";
 import Vanderlinde from "./Components/Gang/VanDerLinde";
+import Weaponry from "./Components/Weaponry/Weaponry";
 import Footer from "./Components/General/Footer";
 
 const App: React.FC = () => {
@@ -25,6 +26,7 @@ const App: React.FC = () => {
           <Route path="/fish" element={<FishGrid />} />
           <Route path="/legendary" element={<LegendaryGrid />} />
           <Route path="/the-gang" element={<Vanderlinde />} />
+          <Route path="/weaponry" element={<Weaponry />} />
         </Routes>
         <Footer />
       </div>
